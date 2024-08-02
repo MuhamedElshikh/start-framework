@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/ass1",
+            "outputPath": "docs",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -25,9 +25,11 @@
               "src/assets"
             ],
             "styles": [
+              "F:/rute/anglur/ass1/node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "src/styles.css"
+
             ],
-            "scripts": [],
+            "scripts": [  "node_modules/flowbite/dist/flowbite.min.js"],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -96,5 +98,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "31d17fa2-a913-49b3-981a-a0f60a944be4"
   }
 }
